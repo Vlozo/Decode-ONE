@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador ONE</title>
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <h1>Decod<mark>ONE</mark></h1>
+        <a href="https://oracle.com/br/one" target="_blank"><img src="/assets/ONE-logo.png" alt="Logo ONE - Oracle Next Education" class="header__img_ONE"></a>
+    </header>
+    
+    <main class="app">
+        <section class="app__content">
+            <div class="app__content__info">
+                <img src="/assets/exclamation-point.svg" alt="Ícone exclamação">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+
+            <div class="app__content__input_container">
+                <textarea class="app__content__input_box" id="input_area" placeholder="Digite seu texto..."></textarea>
+            </div>
+
+            <div class="app__content__buttons">
+                <button id="encrypt_btn">Criptografar</button>
+                <button id="decrypt_btn">Descriptografar</button>
+            </div>
+
+            <div class="app__content__output_box">
+                <p class="output-box__content" id="output_area" style="display: none;"></p>
+                <div class="output-box__initial__info" id="initial_info">
+                    <img src="/assets/search-freepik.svg" alt="Ilustração: Homem procurando informações" class="initial__info__illustration">
+                    <h2>Nenhuma mensagem encontrada</h2>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+
+            <div class="app__content__tools">
+                <button id="copy_btn" class="app__content__tools__copy" title="Copiar">
+                    <img src="/assets/copy.svg" alt="ícone botão copiar">
+                </button>
+                <button id="storage_btn" class="app__content__tools__storage" title="Histórico">
+                    <img src="/assets/history-cache.svg" alt="ícone botão histórico">
+                </button>
+            </div>
+        </section>
+
+        <span class="app__storage__mask" id="storage_area" style="display: none;">
+            <aside class="app__storage">
+                <div class="app__storage__header">
+                    <h2>Textos criptografados</h2>
+                    <button id="close_storage_btn" class="app__storage__header__close" title="Fechar histórico">&times;</button>
+                </div>
+                <button id="clear_btn" class="app__storage__header__clear">Limpar todo o histórico</button>
+                <ul class="app__storage__list" id="storage_list_container"></ul>
+            </aside>
+        </span>
+        
+    </main>
+    <footer>
+        <p class="footer__info">Desenvolvido por: <a href="https://github.com/Vlozo" target="_blank">Vlozo</a> | Ilustração por: <a href="https://storyset.com/" target="_blank">Storyset</a></p>
+    </footer>
+</body>
+</html>
