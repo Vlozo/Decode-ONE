@@ -1,3 +1,5 @@
+![Badge-Decodificador](Badge%20-%20Decodificador.png)
+
 # Decodificador ONE
 O DecodONE é um Aplicativo web que decodifica mensagens simples, ele foi desenvolvido para o desafio do programa ONE - Oracle Next Education, em parceria com a Alura. 
 A proposta do desafio é de desenvolver um decodificador de texto que transforma as vogais mínusculas e não acentuadas em pequenas palavras pré-definidas, embaralhando a leitura convencional.
